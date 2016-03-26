@@ -41,3 +41,9 @@ org.eclipse.dltk.core.ModelException: RemoteSystemsTempFiles does not exist
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-26 14:57:56.346
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-26 15:01:37.214
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-26 15:01:37.220
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
