@@ -1,0 +1,18 @@
+2016-03-26 14:56:48,629 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\SSD\Training\GitHub\Java-Technologies\Java-Basic\pom.xml
+2016-03-26 14:56:49,978 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Java-Basic:Java-Basic:0.0.1-SNAPSHOT @ C:\SSD\Training\GitHub\Java-Technologies\Java-Basic\pom.xml.
+2016-03-26 14:56:51,275 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Java-Basic/src/main/java
+2016-03-26 14:56:51,279 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Java-Basic/src/test/java
+2016-03-26 14:56:51,982 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2016-03-26 14:56:52,641 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-26 14:56:52,642 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\Java-Basic\src\main\resources
+2016-03-26 14:56:52,644 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-26 14:56:52,644 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\Java-Basic\src\test\resources
+2016-03-26 14:57:50,035 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.csc.training:spring-mvc-hibernate:0.0.1-SNAPSHOT @ C:\SSD\Training\GitHub\Java-Technologies\Spring-mvc-hibernate\pom.xml.
+2016-03-26 14:57:53,162 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Spring-mvc-hibernate/src/main/java
+2016-03-26 14:57:53,162 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Spring-mvc-hibernate/src/main/resources
+2016-03-26 14:57:53,164 [Worker-30] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Spring-mvc-hibernate/src/test/java
+2016-03-26 14:57:54,423 [Worker-30] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2016-03-26 14:57:56,260 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-26 14:57:56,290 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-03-26 14:57:56,345 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-26 14:57:56,346 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\Spring-mvc-hibernate\src\test\resources
