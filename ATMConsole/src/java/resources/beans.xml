@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="atmScreen" class="csc.truong.ATMConsole.ATMScreen" autowire="byType">
+	  <property name="smallestAmount" value="50"></property>
+	  <property name="numCustomer" value="50"></property>
+      <property name="message">
+         <map>
+            <entry key="login" value="Please login to system !"/>
+            <entry key="username" value="Username: "/>
+            <entry key="pin" value="PIN: "/>
+         </map>
+      </property>
+      
+      <property name="menu">
+         <list>
+            <value>	1. Withdrawal</value>
+            <value>	2. Deposit</value>
+            <value>	3. Transfer</value>
+            <value>	4. Change Pin Code</value>
+            <value>	5. Exit</value>
+         </list>
+      </property>
+   </bean>   
+   
+   
+   
+   <bean id="transaction" class="csc.truong.ATMConsole.Transaction" autowire="byType">
+   	  <property name="fileName" value="account.txt"></property>
+   </bean>
+   
+   <bean id="fileUtilCommon" class="csc.truong.ATMConsole.helper.FileUtilCommon" autowire="byType">
+   	  <property name="fileName" value="account.txt"></property>
+   </bean>
+   
+   
+</beans>
+
