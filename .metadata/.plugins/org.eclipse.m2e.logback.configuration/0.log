@@ -118,3 +118,7 @@
 2016-03-26 15:43:45,964 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\ATMConsole\src\main\resources
 2016-03-26 15:43:45,966 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-03-26 15:43:45,966 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\ATMConsole\src\test\resources
+2016-03-26 15:51:46,553 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-26 15:51:46,553 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\ATMConsole\src\main\resources
+2016-03-26 15:51:46,557 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-26 15:51:46,557 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SSD\Training\GitHub\Java-Technologies\ATMConsole\src\test\resources
