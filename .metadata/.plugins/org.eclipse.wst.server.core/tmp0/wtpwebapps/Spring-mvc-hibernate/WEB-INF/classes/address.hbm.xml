@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Address" table="address">
+        <id name="student_id" type="int">
+            <column name="student_id" />
+            <generator class="increment" />
+        </id>
+        <property name="street" type="string">
+            <column name="street" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" />
+        </property>
+        <one-to-one name="student" 
+        				class="model.Student" 
+        					constrained="true">
+		</one-to-one>
+    </class>
+</hibernate-mapping>

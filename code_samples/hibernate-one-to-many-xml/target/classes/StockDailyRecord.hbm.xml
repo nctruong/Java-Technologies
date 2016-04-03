@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.csc.training.hibernate.model.StockDailyRecord" table="stock_daily_record">
+        <id name="recordId" type="integer">
+            <column name="RECORD_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="priceOpen" type="float">
+            <column name="PRICE_OPEN" precision="6" />
+        </property>
+        <property name="priceClose" type="float">
+            <column name="PRICE_CLOSE" precision="6" />
+        </property>
+        <property name="priceChange" type="float">
+            <column name="PRICE_CHANGE" precision="6" />
+        </property>
+        <property name="volume" type="long">
+            <column name="VOLUME" />
+        </property>
+        <property name="date" type="date">
+            <column name="DATE" length="10" not-null="true" unique="true" />
+        </property>
+        
+        <many-to-one name="stock" class="com.csc.training.hibernate.model.Stock" fetch="select">
+            <column name="STOCK_ID" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

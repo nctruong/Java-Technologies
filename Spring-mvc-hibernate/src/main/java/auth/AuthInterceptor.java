@@ -1,5 +1,7 @@
 package auth;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -8,10 +10,14 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 public class AuthInterceptor extends HandlerInterceptorAdapter {
-
+	/* Get actual class name to be printed on */
+	static Logger log = Logger.getLogger(AuthInterceptor.class);
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
+		log.debug("AuthInterceptor.preHandle");
+		log.info("info");
+
 
 		HttpSession session = request.getSession();
 		boolean isLogined = session.getAttribute("isLogin") != null ? (Boolean) session

@@ -58,6 +58,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SSD\Training\GitHub\Java-Technologies\ATMConsole\src\main\java\csc\truong\ATMConsole\helper\FileUtil.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -70,12 +71,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Socket.Socket"/>
 			<item value="Java_Basic.Java_Basic"/>
 		</list>
 		<list key="groupId">
+			<item value="Socket"/>
 			<item value="Java-Basic"/>
 		</list>
 		<list key="artifactId">
+			<item value="Socket"/>
 			<item value="Java-Basic"/>
 		</list>
 		<list key="projectNameTemplate">

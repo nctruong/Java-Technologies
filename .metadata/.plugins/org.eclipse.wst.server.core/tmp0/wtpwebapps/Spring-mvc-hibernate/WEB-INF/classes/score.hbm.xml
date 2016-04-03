@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Score" table="score">
+        <id name="scoreId" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="subject" type="string">
+            <column name="subject" />
+        </property>
+        <property name="score" type="int">
+            <column name="score" />
+        </property>
+        <many-to-one name="student" class="model.Student" fetch="select">
+            <column name="student_id" not-null="true"  />
+        </many-to-one>    
+    </class>
+</hibernate-mapping>

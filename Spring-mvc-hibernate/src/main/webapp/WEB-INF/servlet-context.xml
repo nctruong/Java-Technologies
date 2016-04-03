@@ -76,7 +76,7 @@
 		<property name="basename" value="messages" />
 	</bean>
 	
-	<!-- student -->
+<!-- student -->
 	<bean id="studentDao" class="dao.StudentDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
@@ -84,7 +84,7 @@
 	<bean id="studentService" class="service.StudentServiceImpl">
 	</bean>
 	
-	<!-- score -->
+<!-- score -->
 	<bean id="scoreDao" class="dao.ScoreDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
@@ -92,7 +92,7 @@
 	<bean id="scoreService" class="service.ScoreServiceImpl">
 	</bean>
 	
-
+<!-- Address -->
 	<bean id="addressDao" class="dao.AddressDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
