@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import auth.AuthInterceptor;
 import model.Score;
 import model.Student;
 import service.StudentService;
@@ -25,7 +27,7 @@ import service.StudentService;
 @Controller
 @RequestMapping("student")
 public class CntStudent {
-	
+	//private static org.apache.log4j.Logger log = Logger.getLogger(CntStudent.class);
 	@Autowired
 	@Qualifier("studentService")
 	StudentService service;
@@ -33,6 +35,7 @@ public class CntStudent {
 	@RequestMapping(value = { "/info" }, method = RequestMethod.GET)
 	public String studentInfo(@RequestParam("student_id") int student_id, ModelMap model){
 		// scoreForm
+		//log.info("student/info was called=================================================================");
 		Score scoreForm	= new Score();
 		model.put("scoreForm", scoreForm);
 		

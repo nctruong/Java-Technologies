@@ -1,6 +1,9 @@
 package auth;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,14 +12,18 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 	/* Get actual class name to be printed on */
-	static Logger log = Logger.getLogger(AuthInterceptor.class);
+	//private static org.apache.log4j.Logger log = Logger.getLogger(AuthInterceptor.class);
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
-		log.debug("AuthInterceptor.preHandle");
-		log.info("info");
+		//System.out.println("testing ------------------------");
+		//PropertyConfigurator.configure("log4j.properties");
+
+		//log.debug("AuthInterceptor.preHandle");
+		//log.info("info");
 
 
 		HttpSession session = request.getSession();
@@ -32,14 +39,14 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		
+		//log.info("AuthInterceptor.postHandle");
 	}
 
 	@Override
 	public void afterCompletion(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		
+		//log.info("AuthInterceptor.afterCompletion");
 		
 	}
 

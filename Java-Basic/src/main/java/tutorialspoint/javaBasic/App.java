@@ -1,4 +1,4 @@
-package Java_Basic.Java_Basic;
+package tutorialspoint.javaBasic;
 
 /**
  * Hello world!

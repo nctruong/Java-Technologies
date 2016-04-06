@@ -1,4 +1,4 @@
-package Java_Basic.Java_Basic;
+package tutorialspoint.javaBasic;
 public class TestArray {
 
    public static void main(String[] args) {
