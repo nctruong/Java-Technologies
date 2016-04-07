@@ -15,15 +15,15 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 	/* Get actual class name to be printed on */
-	//private static org.apache.log4j.Logger log = Logger.getLogger(AuthInterceptor.class);
+	private static org.apache.log4j.Logger log = Logger.getLogger(AuthInterceptor.class);
 	@Override
 	public boolean preHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler) throws Exception {
 		//System.out.println("testing ------------------------");
 		//PropertyConfigurator.configure("log4j.properties");
 
-		//log.debug("AuthInterceptor.preHandle");
-		//log.info("info");
+		log.info("AuthInterceptor.preHandle");
+		//log.info("AuthInterceptor");
 
 
 		HttpSession session = request.getSession();
@@ -39,14 +39,14 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request,
 			HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		//log.info("AuthInterceptor.postHandle");
+		log.info("AuthInterceptor.postHandle");
 	}
 
 	@Override
 	public void afterCompletion(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		//log.info("AuthInterceptor.afterCompletion");
+		log.info("AuthInterceptor.afterCompletion");
 		
 	}
 

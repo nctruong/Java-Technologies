@@ -27,7 +27,7 @@ import service.StudentService;
 @Controller
 @RequestMapping("student")
 public class CntStudent {
-	//private static org.apache.log4j.Logger log = Logger.getLogger(CntStudent.class);
+	private static org.apache.log4j.Logger log = Logger.getLogger(CntStudent.class);
 	@Autowired
 	@Qualifier("studentService")
 	StudentService service;
@@ -35,7 +35,7 @@ public class CntStudent {
 	@RequestMapping(value = { "/info" }, method = RequestMethod.GET)
 	public String studentInfo(@RequestParam("student_id") int student_id, ModelMap model){
 		// scoreForm
-		//log.info("student/info was called=================================================================");
+		log.info("show student info");
 		Score scoreForm	= new Score();
 		model.put("scoreForm", scoreForm);
 		
