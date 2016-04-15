@@ -39,7 +39,7 @@ public class VectorDemo {
       
       if(v.contains(new Integer(3)))
     	  System.out.println("Vector contains 3.");
-
+     
       // enumerate the elements in the vector.      
       Enumeration vEnum = v.elements();
       System.out.println("\nElements in vector:");

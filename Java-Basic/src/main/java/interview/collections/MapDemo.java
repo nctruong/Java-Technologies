@@ -8,6 +8,7 @@ import java.util.Map;
  */
 public class MapDemo {
 	public static void main(String[] args) {
+		try{
 	      Map m1 = new HashMap(); 
 	      m1.put("Zara", "8");
 	      m1.put("Mahnaz", "31");
@@ -18,6 +19,9 @@ public class MapDemo {
 	      System.out.println();
 	      System.out.println(" Map Elements");
 	      System.out.print("\t" + m1);
+		}catch(Exception e){
+			System.out.println("Exception e: " + e);
+		}
 	}
 }
  

@@ -12,7 +12,7 @@ public class HashMapDemo {
       hm.put("Ayan", new Double(1378.00));
       hm.put("Daisy", new Double(99.22));
       hm.put("Qadir", new Double(-19.08));
-      
+      hm.put("Qadir", new Double(-29.08));
       
       // Get a set of the entries
       Set set = hm.entrySet();
