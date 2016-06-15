@@ -1,0 +1,65 @@
+package controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.hibernate.mapping.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import model.Customer;
+import service.CustomerService;
+
+@Controller
+@RequestMapping("/")
+public class MainController {
+	@Autowired @Qualifier("CustomerService") private CustomerService service;
+	
+	@RequestMapping(value = {"/", "/login" }, method = RequestMethod.GET)
+	public String login(ModelMap model) {
+		Customer customer = new Customer();
+		model.addAttribute("loginForm", customer);
+
+		return "login";
+	}
+
+	@RequestMapping(value = {"/login" }, method = RequestMethod.POST)
+	public String authenticate(@ModelAttribute("loginForm") Customer user, ModelMap model, HttpSession session) {
+		List Customers = (List) service.findAllCustomers();
+		int Customer_id = 0;
+		boolean flag = false;
+		for(Customer Customer : Customers){
+			System.out.println("customer.customername=" + user.getId());
+			System.out.println("customer.password=" + user.getPassword());
+		
+			if (Customer.getId()().equals(user.getId())
+					&& Customer.getPassword().equals(user.getPassword())){
+				session.setAttribute("customer", Customer);
+				session.setAttribute("isLogin", true);
+				Customer_id = Customer.getId();
+				flag = true; 
+				break;
+			} 
+		}*/
+		
+		/*if (flag){
+			model.addAttribute("Customer_id", Customer_id);
+			//return "forward:Customer/info";
+			return "redirect:Customer/info";
+		} else {
+			return "login";
+		}
+	}
+	
+	@RequestMapping(value = {"/logout" }, method = RequestMethod.GET)
+	public String authenticate(@RequestParam("customerId") int id, ModelMap model, HttpSession session) {
+
+		session.setAttribute("isLogin", false);
+		return "redirect:/";
+		
+	}*/
+}

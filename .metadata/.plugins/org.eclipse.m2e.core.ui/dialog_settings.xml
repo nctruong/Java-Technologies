@@ -33,6 +33,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\SSD\Training\GitHub\Java-Technologies\OS"/>
 			<item value="C:\SSD\Training\GitHub\Java-Technologies\ATMConsole"/>
 			<item value="C:\SSD\Training\GitHub\Java-Technologies\Spring-mvc-hibernate"/>
 		</list>

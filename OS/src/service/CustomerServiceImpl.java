@@ -13,12 +13,8 @@ import model.Customer;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-	@Autowired
-	@Qualifier("CustomerDao") private CustomerDao dao;
-	//private static CustomerDaoImpl dao;
-	public CustomerServiceImpl(){
-		//dao = new CustomerDaoImpl();
-	}
+	@Autowired @Qualifier("CustomerDao") private CustomerDao dao;
+	public CustomerServiceImpl(){}
 	
 	@Override
 	public Customer findById(int id) {

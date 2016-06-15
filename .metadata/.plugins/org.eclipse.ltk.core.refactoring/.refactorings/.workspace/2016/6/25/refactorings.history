@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 14 resources" deleteContents="false" description="Delete 14 resources" element1="/hibernate-many-to-many" element10="/spring-mvc-hello" element11="/spring-mvc-hibernate" element12="/spring-mvc-i18n" element13="/spring-mvc-session" element14="/spring-mvc-validation" element2="/hibernate-one-to-many-xml" element3="/hibernate-one-to-one-xml" element4="/sample-collection-injection" element5="/sample-hibernate-xml" element6="/Servers" element7="/spring-data-jdbc" element8="/spring-hibernate-xml" element9="/spring-mvc-form" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="14" stamp="1466004783173"/>
+</session>

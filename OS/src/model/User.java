@@ -8,22 +8,29 @@ import org.hibernate.annotations.Entity;
 import org.hibernate.annotations.Table;
 
 @Entity
-@Table(appliesTo="USER")
+@Table(appliesTo="USERS")
 public class User {
-	private String id;
+	private int id;
+	private String username;
 	private String password;
 	private String loginStatus;
 	
 	@Id
     @GeneratedValue
     @Column(name="ID")
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
-	
+	@Column(name="USERNAME", nullable=false)
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	@Column(name="PASSWORD", nullable=false)
 	public String getPassword() {
 		return password;

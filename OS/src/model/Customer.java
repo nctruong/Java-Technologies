@@ -8,7 +8,7 @@ import org.hibernate.annotations.Entity;
 import org.hibernate.annotations.Table;
 
 @Entity
-@Table(appliesTo = "CUSTOMER")
+@Table(appliesTo = "CUSTOMERS")
 public class Customer extends User {
 	private String name;
 	private String address;
