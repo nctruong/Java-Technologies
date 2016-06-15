@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
@@ -29,7 +28,7 @@
             <p id="profile-name" class="profile-name-card"></p>
             <form:form class="form-signin" action="login" commandName="loginForm" method="post">
                 <span id="reauth-email" class="reauth-email"></span>
-                <form:input type="text" path="username" id="inputEmail" class="form-control" placeholder="Username"/>
+                <form:input type="text" path="id" id="inputEmail" class="form-control" placeholder="Username"/>
                 <form:input type="password" path="password" id="inputPassword" class="form-control" placeholder="Password"/>
                 <div id="remember" class="checkbox">
                     <label>

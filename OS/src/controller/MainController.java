@@ -13,18 +13,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import model.Customer;
+
 @Controller
 @RequestMapping("/")
 public class MainController {
-	@Autowired
+	//@Autowired
 	//@Qualifier("studentService")
 	//StudentService service;
 	@RequestMapping(value = {"/", "/login" }, method = RequestMethod.GET)
 	public String login(ModelMap model) {
-		//Student loginForm = new Student();
-		//model.addAttribute("loginForm", loginForm);
+		Customer customer = new Customer();
+		model.addAttribute("loginForm", customer);
 
-		return "index";
+		return "login";
 	}
 
 	/*@RequestMapping(value = {"/login" }, method = RequestMethod.POST)
